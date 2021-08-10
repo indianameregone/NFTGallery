@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{    
+    color:white;
+    font-size: 50px;
+    margin-left: 5%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App{
+    background-color: black;
+}
+.shopping-list{
+    display: flex;
+    width: 95%;
+    height: 100px;      
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .shopping-list ul a{
+    color: white;
+    text-decoration: none;    
+    font-size: 25px;
+    padding-left: 1%;
+    padding-right: 5%;
+    cursor: pointer;
   }
-  to {
-    transform: rotate(360deg);
+  .shopping-list ul{
+      display: flex;
+     align-items: flex-end;
   }
-}
+ 
+ .usmain{
+    background: radial-gradient(circle,blue 0%,black 80%);
+    width: 100%;
+    height: 90vh;
+    justify-items: center;
+    padding-left: 5%;
+ }
+ .ustitle{
+     color: white;
+     font-weight: bold;
+ }
+ .usspeech{
+     color: white;
+     width: 50%;
+     font-size: 1.5em;
+ }

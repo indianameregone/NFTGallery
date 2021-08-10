@@ -1,0 +1,64 @@
+#container{    
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+.slide{
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    flex: 1;
+    border-right: 1px solid white;
+    filter: invert(15%);
+    box-shadow: 0 0 20px 10px rgb(0, 0,0,.5);
+    transition: 0.4s ease-in-out;
+}
+
+.slide:nth-child(1){
+    background: url('mando1.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide:nth-child(2){
+    background: url('mando2.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide:nth-child(3){
+    background: url('mando3.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide:nth-child(4){
+    background: url('mando4.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide:nth-child(5){
+    background: url('mando5.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide:nth-child(6){
+    background: url('mando6.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide:nth-child(7){
+    background: url('mando7.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+}
+.slide:hover{
+    flex-grow: 3;
+    filter: invert(0);
+}

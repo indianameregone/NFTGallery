@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { render } from '@testing-library/react';
+import React from 'react';
+import { ReactDOM } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css'
+import Header from './Header';
+import Gallery from './NFTGallery';
+import Wallet from './Wallet';
+import Us from './Us';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+function App(){
+    return(
+        <Router>
+        <div className="App">
+          <Header name='Robin'/>
+          <div className="content">
+            <Switch>
+              <Route exact path="/">
+                <Gallery />
+              </Route>
+              <Route path="/wallet">
+                <Wallet />
+              </Route>
+              <Route path="/us">
+                <Us />
+              </Route>
+            </Switch>
+          </div>
+        </div>
+      </Router>
+       
+);
 }
-
 export default App;
